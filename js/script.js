@@ -14,6 +14,8 @@ function downloadPDF() {
     // Form inputs
     fname = document.getElementById('fname').value;
     lname = document.getElementById('lname').value;
+    street = document.getElementById('street').value;
+    zipCity = document.getElementById('zipCity').value;
     bday = document.getElementById('bday').value;
     smonth = document.getElementById('smonth').value;
     emonth = document.getElementById('emonth').value;
@@ -29,8 +31,8 @@ function downloadPDF() {
 
     doc.setFontSize(11);
     doc.text([fname + " " + lname,
-              "Willemerstr. 29",
-              "60594 Frankfurt"],
+              street,
+              zipCity],
              25, 44.7, {maxWidth: 85});
 
     // Info block
