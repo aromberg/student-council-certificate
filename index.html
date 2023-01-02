@@ -6,10 +6,10 @@
   <body>
     <form onsubmit="downloadPDF()">
       <label for="fname">Vorname:</label>
-      <input type="text" id="fname" name="fname"><br><br>
+      <input type="text" id="fname" name="fname" required><br><br>
 
       <label for="lname">Nachname:</label>
-      <input type="text" id="lname" name="lname"><br><br>
+      <input type="text" id="lname" name="lname" required><br><br>
 
       <label for="street">Straße & Nummer:</label>
       <input type="text" id="street" name="street"><br><br>
@@ -18,13 +18,13 @@
       <input type="text" id="zipCity" name="zipCity"><br><br>
 
       <label for="bday">Geburstsdatum:</label>
-      <input type="date" id="bday" name="bday"><br><br>
+      <input type="date" id="bday" name="bday" required><br><br>
 
       <label for="smonth">Beitritt Fachschaft:</label>
-      <input type="date" id="smonth" name="emonth"><br><br>
+      <input type="date" id="smonth" name="emonth" required><br><br>
 
       <label for="emonth">Austritt Fachschaft:</label>
-      <input type="date" id="emonth" name="emonth"><br><br>
+      <input type="date" id="emonth" name="emonth" required><br><br>
 
       <input type="submit" value="Bescheinigung generieren">
     </form>
