@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Bescheinigungsgenerator Fachschaft Bioinformatik!</title>
+  </head>
+  <body>
+    <form onsubmit="downloadPDF()">
+      <label for="fname">Vorname:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+
+      <label for="lname">Nachname:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+
+      <label for="bday">Geburstsdatum:</label>
+      <input type="date" id="bday" name="bday"><br><br>
+
+      <label for="smonth">Beitritt Fachschaft:</label>
+      <input type="date" id="smonth" name="emonth"><br><br>
+
+      <label for="emonth">Austritt Fachschaft:</label>
+      <input type="date" id="emonth" name="emonth"><br><br>
+
+      <input type="submit" value="Bescheinigung generieren">
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
